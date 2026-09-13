@@ -6,7 +6,7 @@
 |-------|---------|
 | **Name** | Nadir Hussain |
 | **Registration No** | 242754 |
-| **Class** | BSCSev-F-24-A-1064 |
+| **Class** | BSCSev-F-24-A |
 | **Semester** | 5th |
 | **Course** | Full Stack Web Development (CS301) |
 | **University** | Air University, Islamabad |
