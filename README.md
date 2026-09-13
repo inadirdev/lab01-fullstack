@@ -18,7 +18,7 @@
 This is Lab 01 of Full Stack Web Development. In this lab, I learned and implemented:
 
 - HTML5 semantic structure
-- CSS3 styling (external stylesheet)
+- CSS3 styling (external stylesheet
 - Bootstrap 5 grid system and components
 - Git and GitHub setup
 
