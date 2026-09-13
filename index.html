@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nadir Hussain — BSCS Student, Aspiring Full-Stack & Cloud Developer. Portfolio showcasing projects, skills, and achievements.">
+    <meta name="author" content="Nadir Hussain">
+    <meta name="keywords" content="Nadir Hussain, Full Stack Developer, Flutter, AWS, Air University, Portfolio">
+    <title>Nadir Hussain | Full-Stack & Cloud Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== SCROLL PROGRESS BAR ===== -->
+    <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code me-2" aria-hidden="true"></i>Nadir<span class="text-accent">.</span>
+            </a>
+
+            <div class="d-flex align-items-center order-lg-2 ms-auto ms-lg-0">
+                <!-- Dark / Light Mode Toggle -->
+                <button id="theme-toggle" class="btn btn-theme-toggle me-2" type="button" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <p class="hero-greeting fade-in">Hello, I'm</p>
+                    <h1 class="hero-name fade-in">Nadir Hussain</h1>
+                    <p class="hero-title fade-in">
+                        BSCS Student · Aspiring Full-Stack &amp; Cloud Developer
+                    </p>
+                    <p class="hero-tagline fade-in">
+                        <span id="typing-text" aria-live="polite"></span>
+                        <span class="typing-cursor" aria-hidden="true">|</span>
+                    </p>
+                    <div class="hero-buttons fade-in">
+                        <a href="#projects" class="btn btn-primary btn-lg me-2 mb-2">
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i>View Projects
+                        </a>
+                        <a href="assets/Nadir_Hussain_CV.docx" class="btn btn-accent btn-lg me-2 mb-2" download>
+                            <i class="fas fa-download me-2" aria-hidden="true"></i>Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg mb-2">
+                            <i class="fas fa-envelope me-2" aria-hidden="true"></i>Contact Me
+                        </a>
+                    </div>
+                    <div class="hero-social fade-in">
+                        <a href="https://github.com/inadirdev" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/imnadirdev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:nadirdev9@gmail.com" aria-label="Send email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-5 mt-lg-0 fade-in">
+                    <div class="hero-avatar-wrapper">
+                        <img src="assets/profile.jpg"
+                             alt="Nadir Hussain — Professional portrait"
+                             class="hero-avatar img-fluid"
+                             width="320" height="320">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="py-5 section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead about-lead">
+                        Motivated BS Computer Science student (5th Semester) at Air University Islamabad
+                        with practical experience in full-stack web development, mobile application
+                        development, and database design.
+                    </p>
+                    <p>
+                        Recognized as a <strong>UN Millennium Fellow (Class of 2025)</strong> representing
+                        Air University on a global platform. Active member of the AWS Cloud Club at
+                        Air University. Eager to contribute technical skills and a strong work ethic
+                        in a professional internship environment.
+                    </p>
+                    <ul class="about-info list-unstyled mt-4">
+                        <li><i class="fas fa-map-marker-alt me-2 text-accent" aria-hidden="true"></i>Islamabad, Pakistan</li>
+                        <li><i class="fas fa-envelope me-2 text-accent" aria-hidden="true"></i>nadirdev9@gmail.com</li>
+                        <li><i class="fas fa-phone me-2 text-accent" aria-hidden="true"></i>03116460189</li>
+                        <li><i class="fas fa-graduation-cap me-2 text-accent" aria-hidden="true"></i>Air University Islamabad</li>
+                    </ul>
+                    <a href="assets/Nadir_Hussain_CV.docx" class="btn btn-primary mt-3" download>
+                        <i class="fas fa-download me-2" aria-hidden="true"></i>Download CV
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center reveal">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop"
+                             alt="Developer workspace with laptop and code on screen"
+                             class="img-fluid rounded-4 shadow-lg about-image"
+                             loading="lazy"
+                             width="600" height="400">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="py-5 section-padding bg-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h2 class="section-title text-center">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Languages -->
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 skill-card shadow-sm">
+                        <div class="card-body">
+                            <div class="skill-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+                            <h5 class="card-title">Languages</h5>
+                            <div class="skill-tags">
+                                <span class="skill-badge">C++</span>
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">JavaScript</span>
+                                <span class="skill-badge">SQL</span>
+                                <span class="skill-badge">Dart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 skill-card shadow-sm">
+                        <div class="card-body">
+                            <div class="skill-icon"><i class="fas fa-paint-brush" aria-hidden="true"></i></div>
+                            <h5 class="card-title">Frontend</h5>
+                            <div class="skill-tags">
+                                <span class="skill-badge">HTML5</span>
+                                <span class="skill-badge">CSS3</span>
+                                <span class="skill-badge">Bootstrap</span>
+                                <span class="skill-badge">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & DB -->
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 skill-card shadow-sm">
+                        <div class="card-body">
+                            <div class="skill-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+                            <h5 class="card-title">Backend &amp; DB</h5>
+                            <div class="skill-tags">
+                                <span class="skill-badge">MySQL</span>
+                                <span class="skill-badge">CRUD Operations</span>
+                                <span class="skill-badge">REST-style APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 skill-card shadow-sm">
+                        <div class="card-body">
+                            <div class="skill-icon"><i class="fas fa-mobile-alt" aria-hidden="true"></i></div>
+                            <h5 class="card-title">Mobile Development</h5>
+                            <div class="skill-tags">
+                                <span class="skill-badge">Flutter</span>
+                                <span class="skill-badge">Dart</span>
+                                <span class="skill-badge">Android Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Version Control -->
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 skill-card shadow-sm">
+                        <div class="card-body">
+                            <div class="skill-icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+                            <h5 class="card-title">Cloud &amp; Version Control</h5>
+                            <div class="skill-tags">
+                                <span class="skill-badge">Git</span>
+                                <span class="skill-badge">GitHub</span>
+                                <span class="skill-badge">AWS Fundamentals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core CS -->
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 skill-card shadow-sm">
+                        <div class="card-body">
+                            <div class="skill-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+                            <h5 class="card-title">Core CS</h5>
+                            <div class="skill-tags">
+                                <span class="skill-badge">Data Structures</span>
+                                <span class="skill-badge">Algorithms</span>
+                                <span class="skill-badge">OOP</span>
+                                <span class="skill-badge">Database Systems</span>
+                                <span class="skill-badge">Software Engineering</span>
+                                <span class="skill-badge">Information Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="py-5 section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h2 class="section-title text-center">Featured Projects</h2>
+                <p class="section-subtitle">Real-world projects from my academic and professional journey</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=300&fit=crop"
+                             class="card-img-top" alt="Smart E-Commerce Mobile App interface on smartphone"
+                             loading="lazy" width="600" height="300">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Smart E-Commerce Mobile App</h5>
+                            <p class="card-text flex-grow-1">
+                                Full-featured mobile shopping application with product listings, cart
+                                management, and user authentication using Flutter and Dart.
+                            </p>
+                            <div class="project-tags mb-3">
+                                <span class="project-tag">Dart</span>
+                                <span class="project-tag">Flutter</span>
+                                <span class="project-tag">Mobile Computing</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm align-self-start" aria-label="View Smart E-Commerce Mobile App project">
+                                <i class="fas fa-external-link-alt me-1" aria-hidden="true"></i>View Project
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=300&fit=crop"
+                             class="card-img-top" alt="Hostel Management System database architecture"
+                             loading="lazy" width="600" height="300">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Hostel Management System</h5>
+                            <p class="card-text flex-grow-1">
+                                Relational database system for hostel administration covering room allocation,
+                                resident records, complaint tracking, and fee management with normalization
+                                and ER modeling.
+                            </p>
+                            <div class="project-tags mb-3">
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Database Systems</span>
+                                <span class="project-tag">SQL</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm align-self-start" aria-label="View Hostel Management System project">
+                                <i class="fas fa-external-link-alt me-1" aria-hidden="true"></i>View Project
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="assets/millennium-fellowship.jpg"
+                             class="card-img-top" alt="Millennium Fellowship Time4Knowledge social impact initiative"
+                             loading="lazy" width="600" height="300">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Time4Knowledge — Millennium Fellowship</h5>
+                            <p class="card-text flex-grow-1">
+                                Led an international social impact initiative as UN Millennium Fellow
+                                representing Air University, contributing to UN Sustainable Development Goals
+                                through community outreach and youth leadership.
+                            </p>
+                            <div class="project-tags mb-3">
+                                <span class="project-tag">Social Impact</span>
+                                <span class="project-tag">Leadership</span>
+                                <span class="project-tag">UNAI / MCN</span>
+                            </div>
+                            <a href="https://www.millenniumfellows.org/fellow/2025/au-pk/nadir-hussain" class="btn btn-outline-primary btn-sm align-self-start" aria-label="View Time4Knowledge Millennium Fellowship project">
+                                <i class="fas fa-external-link-alt me-1" aria-hidden="true"></i>View Project
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="py-5 section-padding bg-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h2 class="section-title text-center">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+
+            <div class="timeline reveal">
+                <!-- Education Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <span class="timeline-date">2024 – Expected 2028</span>
+                            <h5 class="card-title">BS Computer Science</h5>
+                            <h6 class="timeline-institution">Air University, Islamabad</h6>
+                            <p class="card-text mb-2">
+                                Relevant Coursework: Programming Fundamentals, OOP, Data Structures,
+                                Database Systems, Information Security, Mobile Computing, Software Engineering
+                            </p>
+                            <span class="skill-badge">5th Semester</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <span class="timeline-date">2022 – 2024</span>
+                            <h5 class="card-title">ICS (Computer Science)</h5>
+                            <h6 class="timeline-institution">Govt. Degree College Umerkot, Rajanpur</h6>
+                            <p class="card-text mb-0">
+                                Intermediate in Computer Science with focus on programming fundamentals
+                                and mathematics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section id="certifications" class="py-5 section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h2 class="section-title text-center">Certifications</h2>
+                <p class="section-subtitle">Professional credentials and learning milestones</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3 reveal">
+                    <div class="card h-100 cert-card shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="cert-icon cert-icon-gold">
+                                <i class="fas fa-globe-americas" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="card-title">UN Millennium Fellow</h5>
+                            <p class="card-text text-muted">Class of 2025</p>
+                            <p class="small">UNAI &amp; MCN</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 reveal">
+                    <div class="card h-100 cert-card shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="cert-icon cert-icon-cloud">
+                                <i class="fas fa-cloud" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="card-title">Cloud Computing</h5>
+                            <p class="card-text text-muted">DataCamp</p>
+                            <p class="small">AWS &amp; Cloud Fundamentals</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 reveal">
+                    <div class="card h-100 cert-card shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="cert-icon cert-icon-code">
+                                <i class="fas fa-code" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="card-title">C++ Programming</h5>
+                            <p class="card-text text-muted">Certification</p>
+                            <p class="small">OOP, Data Structures &amp; Algorithms</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 reveal">
+                    <div class="card h-100 cert-card shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="cert-icon cert-icon-web">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="card-title">HTML &amp; CSS</h5>
+                            <p class="card-text text-muted">Web Development Fundamentals</p>
+                            <p class="small">Responsive Web Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS SECTION ===== -->
+    <section id="achievements" class="py-5 section-padding bg-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h2 class="section-title text-center">Achievements</h2>
+                <p class="section-subtitle">Highlights from my academic and leadership journey</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Featured Achievement -->
+                <div class="col-lg-8 reveal">
+                    <div class="card achievement-featured shadow">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="achievement-badge">
+                                    <i class="fas fa-award" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <span class="achievement-label">Featured Achievement</span>
+                                    <h3 class="achievement-title">UN Millennium Fellow — Class of 2025</h3>
+                                    <p class="achievement-org">United Nations Academic Impact (UNAI) &amp; Millennium Campus Network (MCN)</p>
+                                    <p>
+                                        Officially recognized for completing the Millennium Fellowship Project,
+                                        representing <strong>Air University</strong> on a global platform and
+                                        contributing to UN Sustainable Development Goals through the
+                                        <strong>Time4Knowledge</strong> initiative.
+                                    </p>
+                                    <ul class="achievement-list">
+                                        <li><i class="fas fa-check-circle me-2" aria-hidden="true"></i>Led international social impact initiative</li>
+                                        <li><i class="fas fa-check-circle me-2" aria-hidden="true"></i>Represented Air University globally</li>
+                                        <li><i class="fas fa-check-circle me-2" aria-hidden="true"></i>Contributed to UN Sustainable Development Goals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Achievements -->
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 achievement-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="achievement-icon"><i class="fab fa-aws" aria-hidden="true"></i></div>
+                            <h5 class="card-title">AWS Cloud Club Member</h5>
+                            <p class="card-text">Active member of the AWS Cloud Club at Air University, exploring cloud computing and AWS services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 achievement-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="achievement-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+                            <h5 class="card-title">Youth Leadership</h5>
+                            <p class="card-text">Led community outreach and youth leadership activities as part of the Millennium Fellowship program.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <div class="card h-100 achievement-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="achievement-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+                            <h5 class="card-title">Full-Stack Projects</h5>
+                            <p class="card-text">Built multiple full-stack and mobile applications demonstrating practical software development skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="py-5 section-padding contact-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h2 class="section-title text-center">Get In Touch</h2>
+                <p class="section-subtitle">Have a project or opportunity? I'd love to hear from you.</p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5 reveal">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div>
+                                <h6>Email</h6>
+                                <a href="mailto:nadirdev9@gmail.com">nadirdev9@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                            <div>
+                                <h6>Phone</h6>
+                                <a href="tel:+923116460189">03116460189</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div>
+                                <h6>Location</h6>
+                                <p>Islamabad, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7 reveal">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name"
+                                   placeholder="Your full name" required aria-describedby="name-error">
+                            <div id="name-error" class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                   placeholder="your@email.com" required aria-describedby="email-error">
+                            <div id="email-error" class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject"
+                                   placeholder="What is this about?">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                      placeholder="Your message..." required aria-describedby="message-error"></textarea>
+                            <div id="message-error" class="invalid-feedback">Please enter your message (minimum 10 characters).</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Send Message
+                        </button>
+                        <div id="form-success" class="alert alert-success mt-3 d-none" role="alert">
+                            <i class="fas fa-check-circle me-2" aria-hidden="true"></i>
+                            Thank you! Your message has been sent successfully.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 Nadir Hussain. All rights reserved.</p>
+                    <p class="footer-sub mb-0">Air University Islamabad · BSCS Student</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-links">
+                        <a href="https://github.com/inadirdev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/imnadirdev//" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:nadirdev9@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
