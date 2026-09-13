@@ -4,7 +4,7 @@
 
 | Field | Details |
 |-------|---------|
-| **Name** | Nadir Hussain |
+| **Name** | Nadir Hussainn |
 | **Registration No** | 242754 |
 | **Class** | BSCSev-F-24-A |
 | **Semester** | 5th |
